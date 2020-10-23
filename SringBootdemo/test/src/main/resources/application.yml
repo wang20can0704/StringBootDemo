@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    name: user #数据库名
+    url: jdbc.mysql://localhost:3306/user #url
+    username: root #用户名
+    password: root #密码
+    driver-class-name: com.mysql.jdbc.Driver #数据库链接驱动
+
+mybatis:
+#  mapper-locations: classpath:mapper/*.xml #配置映射文件
+#  mapper-locations: classpath:D:\idea\intellij idea2020.1\SringBootdemo\test\src\main\resources\mapper\UserMapper.xml #配置映射文件  #  mapper-locations: classpath:com.example.test.mapper.UserMapper #配置映射文件
+  type-aliases-package: com.example.test.bean #配置实体类
+  mapper-locations: classpath D:\idea\intellij idea2020.1\SringBootdemo\test\src\main\resources\mapper\UserMapper.xml #配置映射文件
